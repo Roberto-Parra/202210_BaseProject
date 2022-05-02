@@ -1,7 +1,63 @@
 <testExecutions version="1">
+  <file path="src/app/vehiculos/vehiculos.service.spec.ts">
+    <testCase name="Service: Vehiculos should ..." duration="11"/>
+  </file>
   <file path="src/app/app.component.spec.ts">
-    <testCase name="AppComponent should have as title 'base-project'" duration="118"/>
-    <testCase name="AppComponent should create the app" duration="14"/>
-    <testCase name="AppComponent should render title" duration="13"/>
+    <testCase name="AppComponent should have as title 'Vehiculos'" duration="20"/>
+    <testCase name="AppComponent should create the app" duration="4"/>
+  </file>
+  <file path="src/app/vehiculos/vehiculos-list/vehiculos-list.component.spec.ts">
+    <testCase name="VehiculosListComponent should render one component for each vehicule register" duration="57">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[VehiculosService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'VehiculosService', 'HttpClient', 'HttpClient' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[VehiculosService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
+    at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
+    at Object.VehiculosService_Factory [as factory] (ng:///VehiculosService/ɵfac.js:4:44)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11457:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11276:1)
+    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21832:1)
+    at Object.get (node_modules/@angular/core/fesm2015/core.mjs:21509:1)
+
+TypeError: Cannot read properties of undefined (reading 'queryAll')
+    at UserContext.&lt;anonymous&gt; (src/app/vehiculos/vehiculos-list/vehiculos-list.component.spec.ts:65:34)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:371:1)
+    at Zone.run (node_modules/zone.js/fesm2015/zone.js:134:1)
+    at runInTestZone (node_modules/zone.js/fesm2015/zone-testing.js:567:1)
+    at UserContext.&lt;anonymous&gt; (node_modules/zone.js/fesm2015/zone-testing.js:582:1)
+    at &lt;Jasmine&gt;
+</failure>
+    </testCase>
+    <testCase name="VehiculosListComponent should create" duration="6">
+      <failure message="Error">NullInjectorError: R3InjectorError(DynamicTestModule)[VehiculosService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+error properties: Object({ ngTempTokenPath: null, ngTokenPath: [ 'VehiculosService', 'HttpClient', 'HttpClient' ] })
+NullInjectorError: R3InjectorError(DynamicTestModule)[VehiculosService -&gt; HttpClient -&gt; HttpClient]: 
+  NullInjectorError: No provider for HttpClient!
+    at NullInjector.get (node_modules/@angular/core/fesm2015/core.mjs:11120:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11287:1)
+    at injectInjectorOnly (node_modules/@angular/core/fesm2015/core.mjs:4765:1)
+    at ɵɵinject (node_modules/@angular/core/fesm2015/core.mjs:4769:1)
+    at Object.VehiculosService_Factory [as factory] (ng:///VehiculosService/ɵfac.js:4:44)
+    at R3Injector.hydrate (node_modules/@angular/core/fesm2015/core.mjs:11457:1)
+    at R3Injector.get (node_modules/@angular/core/fesm2015/core.mjs:11276:1)
+    at NgModuleRef.get (node_modules/@angular/core/fesm2015/core.mjs:21832:1)
+    at Object.get (node_modules/@angular/core/fesm2015/core.mjs:21509:1)
+
+Error: Expected undefined to be truthy.
+    at &lt;Jasmine&gt;
+    at UserContext.&lt;anonymous&gt; (src/app/vehiculos/vehiculos-list/vehiculos-list.component.spec.ts:62:23)
+    at _ZoneDelegate.invoke (node_modules/zone.js/fesm2015/zone.js:372:1)
+    at ProxyZoneSpec.onInvoke (node_modules/zone.js/fesm2015/zone-testing.js:287:1)
+</failure>
+    </testCase>
   </file>
 </testExecutions>

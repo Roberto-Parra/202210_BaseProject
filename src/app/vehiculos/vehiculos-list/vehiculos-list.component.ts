@@ -16,7 +16,7 @@ export class VehiculosListComponent implements OnInit {
     this.vehiculosService.obtenerVehiculos()
     .subscribe(vehiculos => {
       this.vehiculos = vehiculos;
-      console.log(this.vehiculos);
+      //console.log(this.vehiculos);
     });
   }
 
